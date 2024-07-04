@@ -1,0 +1,112 @@
+{
+  "Name": "YubikeyEnrollmentAgent",
+  "DisplayName": "Yubikey Enrollment Agent",
+  "flags": 131584,
+  "msPKI-Certificate-Application-Policy": [
+    "1.3.6.1.5.5.7.3.2",
+    "1.3.6.1.4.1.311.20.2.2"
+  ],
+  "msPKI-Certificate-Name-Flag": -2113929216,
+  "msPKI-Certificate-Policy": [],
+  "msPKI-Cert-Template-OID": "1.3.6.1.4.1.311.21.8.129976.6108319.8539040.13816090.11942074.4.17683571.83664331",
+  "msPKI-Enrollment-Flag": 8225,
+  "msPKI-Minimal-Key-Size": 2048,
+  "msPKI-Private-Key-Flag": 101056512,
+  "msPKI-RA-Application-Policies": [
+    "msPKI-Asymmetric-Algorithm`PZPWSTR`RSA`msPKI-Hash-Algorithm`PZPWSTR`SHA256`msPKI-Key-Usage`DWORD`16777215`msPKI-RA-Application-Policies`PZPWSTR`1.3.6.1.4.1.311.20.2.1`msPKI-Symmetric-Algorithm`PZPWSTR`3DES`msPKI-Symmetric-Key-Length`DWORD`168`"
+  ],
+  "msPKI-RA-Policies": [],
+  "msPKI-RA-Signature": 1,
+  "msPKI-Supersede-Templates": [],
+  "msPKI-Template-Minor-Revision": 2,
+  "msPKI-Template-Schema-Version": 4,
+  "pKICriticalExtensions": [],
+  "pKIDefaultCSPs": [
+    "1,Microsoft Smart Card Key Storage Provider"
+  ],
+  "pKIDefaultKeySpec": 1,
+  "pKIExpirationPeriod": [
+    0,
+    128,
+    114,
+    14,
+    93,
+    194,
+    253,
+    255
+  ],
+  "pKIExtendedKeyUsage": [
+    "1.3.6.1.5.5.7.3.2",
+    "1.3.6.1.4.1.311.20.2.2"
+  ],
+  "pKIKeyUsage": [
+    224
+  ],
+  "pKIMaxIssuingDepth": 0,
+  "pKIOverlapPeriod": [
+    0,
+    128,
+    166,
+    10,
+    255,
+    222,
+    255,
+    255
+  ],
+  "revision": 100,
+  "Acl": {
+    "TemplateName": "YubikeyEnrollmentAgent",
+    "Group": "Enterprise Admins",
+    "Owner": "Enterprise Admins",
+    "DACLs": [
+      {
+        "IdentityReference": "Authenticated Users",
+        "ActiveDirectoryRights": "GenericRead",
+        "AccessControlType": "Allow",
+        "ObjectType": "00000000-0000-0000-0000-000000000000",
+        "InheritanceType": "None",
+        "InheritedObjectType": "00000000-0000-0000-0000-000000000000",
+        "IsInherited": false
+      },
+      {
+        "IdentityReference": "Domain Admins",
+        "ActiveDirectoryRights": "CreateChild, DeleteChild, Self, WriteProperty, DeleteTree, Delete, GenericRead, WriteDacl, WriteOwner",
+        "AccessControlType": "Allow",
+        "ObjectType": "00000000-0000-0000-0000-000000000000",
+        "InheritanceType": "None",
+        "InheritedObjectType": "00000000-0000-0000-0000-000000000000",
+        "IsInherited": false
+      },
+      {
+        "IdentityReference": "Enterprise Admins",
+        "ActiveDirectoryRights": "CreateChild, DeleteChild, Self, WriteProperty, DeleteTree, Delete, GenericRead, WriteDacl, WriteOwner",
+        "AccessControlType": "Allow",
+        "ObjectType": "00000000-0000-0000-0000-000000000000",
+        "InheritanceType": "None",
+        "InheritedObjectType": "00000000-0000-0000-0000-000000000000",
+        "IsInherited": false
+      },
+      {
+        "IdentityReference": "Domain Admins",
+        "ActiveDirectoryRights": "ExtendedRight",
+        "AccessControlType": "Allow",
+        "ObjectType": "Certificate-Enrollment",
+        "InheritanceType": "None",
+        "InheritedObjectType": "00000000-0000-0000-0000-000000000000",
+        "IsInherited": false
+      },
+      {
+        "IdentityReference": "Enterprise Admins",
+        "ActiveDirectoryRights": "ExtendedRight",
+        "AccessControlType": "Allow",
+        "ObjectType": "Certificate-Enrollment",
+        "InheritanceType": "None",
+        "InheritedObjectType": "00000000-0000-0000-0000-000000000000",
+        "IsInherited": false
+      }
+    ],
+    "SACLs": [],
+    "AreAccessRulesProtected": true,
+    "AreAuditRulesProtected": false
+  }
+}
