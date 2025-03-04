@@ -3,7 +3,7 @@
     RootModule           = 'PSADCSToolkit.psm1'
 
     # Version number of this module.
-    ModuleVersion        = '1.0.0'
+    ModuleVersion        = '1.0.1'
 
     # Supported PSEditions
     CompatiblePSEditions = @(
@@ -132,7 +132,8 @@
 
             # ReleaseNotes of this module
             ReleaseNotes = '
-            1.0.0.0 - Initial release
+            1.0.0 - Initial release
+			1.0.1 - Set-ADCSTemplateAcl bugfix + small improvements
         '
             # External dependent modules of this module
             ExternalModuleDependencies = @('ActiveDirectory')
